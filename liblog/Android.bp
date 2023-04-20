@@ -156,11 +156,6 @@ cc_library {
     },
     logtags: ["event.logtags"],
     compile_multilib: "both",
-    product_variables: {
-        debuggable: {
-            cflags: ["-UANDROID_DEBUGGABLE", "-DANDROID_DEBUGGABLE=1"],
-        }
-    },
     apex_available: [
         "//apex_available:platform",
         // liblog is exceptionally available to the runtime APEX
